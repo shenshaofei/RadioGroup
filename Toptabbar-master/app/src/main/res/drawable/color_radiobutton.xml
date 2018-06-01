@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:state_selected="true"-->
+          <!--android:drawable="@color/c1olorAccent"/>-->
+    <!--<item android:drawable="@color/c1olorTextGray"/>-->
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <item android:state_checked="true" android:color="@color/c1olorAccent"/>
+
+        <item android:state_checked="false" android:color="@color/c1olorTextGray"/>
+        <item android:drawable="@color/c1olorTextGray"/>
+    </selector>
+
+</selector>

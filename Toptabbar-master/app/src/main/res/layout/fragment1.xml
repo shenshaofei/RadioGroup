@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Fragment1"-->
+        <!--android:gravity="center"/>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c1olorNomal"
+        android:orientation="vertical"
+        tools:context="com.foldtext.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/lin_tv"
+            android:layout_width="232dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/c1olorNight"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hello1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:maxLines="1"
+                android:textSize="19.6sp"
+                android:layout_gravity="center_vertical"
+                android:text="线路偏好" />
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/img_shrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/open" />
+        </LinearLayout>
+
+        <com.example.carson_ho.toptabbar.shrink.ExpandView
+            android:id="@+id/ex_expandview"
+            android:layout_width="232dp"
+            android:layout_height="120dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>
